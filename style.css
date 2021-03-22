@@ -2,3 +2,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.search input:focus {
+    outline: none;
+    border-bottom: #f0dfdf;
+}
