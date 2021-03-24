@@ -12,12 +12,13 @@ a {
 .side-menu--closed{
    width: 72px; 
 
+
 }
 
 .side-menu--closed a .text{
     font-size: 12px;
-
 }
+
 
 .side-menu hr {
     width: 100%;
@@ -42,11 +43,20 @@ a {
 .side-menu--closed a{
     flex-direction: column;
     padding: 0;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
 }
 
 .side-menu .icon{
     width: 25px;
     margin-right: 14px;
+
+}
+
+.side-menu--closed .icon{
+    margin: 0;
+    width: initial;
 }
 
 .side-menu a:hover{
@@ -60,8 +70,17 @@ svg {
 .side-menu a:active svg,
 .side-menu .current svg {
     fill: red;
+    transition: fill 0.5s;
 }
 
 .side-menu a.current {
     background: rgba(0, 0, 0, 0.1);
 }
+
+.side-menu--closed .text:active{
+    color: red;
+}
+.side-menu .text:active{
+    color: red;
+}
+

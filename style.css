@@ -1,12 +1,69 @@
 body{
+    margin: 0;
+    margin-top: -5px;
     background: #f1f1f1;
 }
 #top-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+}
+
+
+
+.search input {
+    width: 574px;
+    height: 30px;
+    left: 385px;
+    top: 13px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 4px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 1px 0px 0px 1px;
+
 }
 
 .search input:focus {
     outline: none;
-    border-bottom: #f0dfdf;
+    border:  1px solid blue;
+}
+
+.button {
+    width: 63px;
+    height: 34px;
+    left: 1023px;
+    top: 13px;
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 1px 0px 0px 1px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+input, 
+button {
+    float: left;
+}
+
+
+.guide-menu{
+    margin-right: 5px;
+    margin-bottom: 3px;
+    padding: 8px;
+}
+
+.youtube-icon{
+    padding: 8px;
+}
+
+.end-button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 225px;
+    margin: 0;
+    padding: 0;
+
 }
