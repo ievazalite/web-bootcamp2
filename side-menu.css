@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+}
+
+.side-menu {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.side-menu--closed{
+   width: 72px; 
+
+}
+
+.side-menu--closed a .text{
+    font-size: 12px;
+
+}
+
+.side-menu hr {
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+    border: 0;
+
+}
+
+.side-menu a {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+
+.side-menu--closed a{
+    flex-direction: column;
+    padding: 0;
+}
+
+.side-menu .icon{
+    width: 25px;
+    margin-right: 14px;
+}
+
+.side-menu a:hover{
+    background: rgb(173, 169, 169);
+}
+
+svg {
+    fill: #606060;
+}
+
+.side-menu a:active svg,
+.side-menu .current svg {
+    fill: red;
+}
+
+.side-menu a.current {
+    background: rgba(0, 0, 0, 0.1);
+}
