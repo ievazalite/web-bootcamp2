@@ -1,0 +1,124 @@
+a {
+  text-decoration: none;
+}
+
+svg {
+  fill: #606060;
+}
+
+.side-menu {
+  font-size: 14px;
+  width: 17.14286em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+.side-menu hr {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  border: 0;
+}
+
+.side-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.85714em;
+  width: 100%;
+  line-height: 1.14286em;
+  color: black;
+  padding-left: 1.85714em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.side-menu a:hover {
+  background: #ada9a9;
+}
+
+.side-menu a :active {
+  color: red;
+}
+
+.side-menu .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.79em;
+  margin-right: 1em;
+}
+
+.side-menu a:active svg,
+.side-menu .current svg {
+  fill: red;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+
+.side-menu a.current {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.side-menu--closed {
+  width: 72px;
+}
+
+.side-menu--closed a {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  height: 72px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu--closed :active {
+  color: red;
+}
+
+.side-menu--closed .icon {
+  margin: 0;
+  width: initial;
+}
+
+.side-menu--closed .text {
+  font-size: 9px;
+}
+
+@media only screen and (max-width: 720px) {
+  .side-menu {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .side-menu--closed {
+    width: 40px;
+  }
+  .side-menu--closed a {
+    height: 55px;
+  }
+  .side-menu--closed .text {
+    display: none;
+  }
+}
+/*# sourceMappingURL=side-menu.css.map */
