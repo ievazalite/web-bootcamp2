@@ -3,21 +3,13 @@ a {
 }
 
 .side-menu {
-    width: 240px;
+    font-size: 14px;
+    width: 17.14em;
     display: flex;
     flex-direction: column;
     background: #fff;
 }
 
-.side-menu--closed{
-   width: 72px; 
-
-
-}
-
-.side-menu--closed a .text{
-    font-size: 12px;
-}
 
 
 .side-menu hr {
@@ -31,32 +23,22 @@ a {
 .side-menu a {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 2.86em;
     width: 100%;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14em;
     color: black;
-    padding-left: 6px;
+    padding-left: 1.86em;
     box-sizing: border-box;
 }
 
-.side-menu--closed a{
-    flex-direction: column;
-    padding: 0;
-    height: 72px;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .side-menu .icon{
-    width: 25px;
-    margin-right: 14px;
+    display: flex;
+    justify-content: center;
+    width: 1.79em;
+    margin-right: 1em;
 
-}
-
-.side-menu--closed .icon{
-    margin: 0;
-    width: initial;
 }
 
 .side-menu a:hover{
@@ -84,3 +66,42 @@ svg {
     color: red;
 }
 
+
+.side-menu--closed .icon{
+    margin: 0;
+    width: initial;
+}
+
+.side-menu--closed a{
+    flex-direction: column;
+    padding: 0;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+}
+.side-menu--closed .text{
+    font-size: 9px;
+}
+
+.side-menu--closed{
+    width: 72px;  
+}
+@media only screen and (max-width: 720px) {
+    .side-menu{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .side-menu--closed{
+        width: 40px;
+    }
+    .side-menu--closed a{
+        height: 55px;
+    }
+    .side-menu--closed .text {
+        display: none;
+    }
+}
+ 
